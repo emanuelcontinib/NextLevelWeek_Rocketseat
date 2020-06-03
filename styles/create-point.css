@@ -90,6 +90,7 @@ form select{ /*tira as setinha do campo de seleção*/
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; 
+  cursor: pointer;
 }
 form label{
   font-size: 14px;
@@ -120,4 +121,48 @@ form button {
 
 form button:hover{
   background-color: #2fb86e;
+}
+
+.items-grid{
+/* display:grid deixa as coisas mais flexíveis */
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; /*1 fr calcula automaticamente como fazer a divisão de colunas*/
+  gap: 16px;
+}
+
+.items-grid li{
+  background-color: #f0f0f5;
+  list-style: none;
+
+  border: 2px #f0f0f5;
+  height: 180px;
+  border-radius: 8px;
+  padding: 32px 24px 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+
+  text-align: center;
+  cursor: pointer;
+}
+.items-grid li span{
+  margin-top: 12px;
+
+  flex: 1; /*preenche o espaço*/
+
+  display: flex; /*alinha ao meio  */
+  align-items: center;
+
+  color: var (--title-color);
+}
+
+.items-grid li.selected{
+  border:3px solid #2fb86e;
+}
+
+.items-grid img,
+.items-grid span{
+  pointer-events: none;
 }
