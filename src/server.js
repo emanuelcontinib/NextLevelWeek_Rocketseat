@@ -97,3 +97,5 @@ server.get('/search', (req, res) => {
 
 //ligar o server
 server.listen(3000)
+
+//at 1:43:59
