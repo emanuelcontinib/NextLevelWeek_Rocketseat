@@ -63,8 +63,8 @@ const db = new SQLite3.Database('./src/database/database.db')
     //   console.log(rows)
     // })
 
-//    //deletar os dados da tabela
-//     db.run(`DELETE FROM places WHERE id = ?`, [22], function(err){
+   //deletar os dados da tabela
+//     db.run(`DELETE FROM places WHERE id = ?`, [7], function(err){
 //       if (err){
 //         return console.log (err)
 //       } 
